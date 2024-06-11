@@ -1,0 +1,269 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.login-page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1400px;
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+    
+    
+}
+
+.gradient {
+    height: 100%;
+    width: 88.6%;
+    background-image: linear-gradient(to top, black, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+img {
+    flex: 1;
+    margin-right: 80px;
+    margin-left: -110px;
+    image-orientation: left;
+    display: block;
+    justify-content: left;
+    align-items: left;
+    color: white;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+.circle {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #ffff; /* Define a borda branca */
+    border-radius: 50%;
+    z-index: 1; /* Garante que o círculo esteja acima da imagem */
+    transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+.circle:hover {
+    transform: translateY(-5px); /* Move o círculo um pouco para cima */
+    border-color: #096cf6de; /* Muda a cor da borda */
+}
+
+.left-circle {
+    top: 36px; /* Ajuste a posição conforme necessário */
+    left: 36px; /* Ajuste a posição conforme necessário */
+
+}
+
+.right-circle {
+    top: 36px; /* Ajuste a posição conforme necessário */
+    right: 150px; /* Ajuste a posição conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-regular {
+    color: #ffff;
+}
+
+
+
+.highlight {
+    display: inline-block;
+    background-color: #0761E2; /* Cor azul */
+    color: white; /* Cor do texto */
+    padding: 5px 12px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    font-size: 14px; /* Tamanho da fonte */
+    box-shadow: 0 2px 4px #0000008e;
+}
+
+.carousel-indicator {
+    position: relative;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    
+}
+  
+.indicator {
+    width: 105px;
+    height: 4px;
+    background-color: #222222;
+    margin-right: 16px;
+    border-radius: 2px;
+}
+  
+.indicator.active {
+    background-color: white;
+}
+
+
+.banner .banner-text {
+    position: absolute;
+    text-align: left;
+    max-width: 80%;
+    left: 40px; /* Distância do texto à esquerda */
+    bottom: 110px; /* Distância do texto ao fundo */
+    color: white;
+    z-index: 1;
+    
+}
+
+.banner .banner-text h2 {
+    font-size: 20px;
+    padding: 15px 0px;
+}
+
+.banner .banner-text p {
+    font-size: 16px;
+    margin: 0;
+    color: #909090;
+}
+
+.login-container {
+    flex: 1;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    justify-content: left; /* Alterado para alinhar os itens à esquerda */
+    align-items: center;
+    background-color: #fafafa;
+    margin-left: -110px;
+}
+
+
+.login-container img,
+.login-container h2 {
+    position: absolute;
+    top: 24px; /* Alinhe ao topo do login-container */
+    left: 24px; /* Alinhe à esquerda do login-container */
+    margin: 10px; /* Adicione margem para separar os elementos */
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    text-align: left; /* Alinhado para a esquerda */
+}
+
+.logo-toolz {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo-toolz img {
+    width: 32px; /* Define a largura da imagem */
+    height: 32px;
+}
+
+.small-reg {
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+.create-an-account {
+    color: #007bff;
+    font-weight: 500;
+    position: relative;
+    left: 376px;
+    bottom: 63px;
+}
+
+.login-card h2 {
+    font-size: 1.5em;
+    padding-top: 3px;
+    padding-left: 35px;
+}
+
+.login-card h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: -40px;
+}
+
+.login-container .login-card p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    
+
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.social-login button {
+    flex: 1;
+    margin: 0 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.recaptcha {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}

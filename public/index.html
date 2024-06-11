@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="banner">
+            <div class="gradient"></div>
+            <img src="images/banner.jpg" alt="banner">
+            <div class="circle left-circle"></div>
+            <div class="circle right-circle">
+                <i class="fa-regular fa-moon"></i>
+            </div>
+
+            <div class="banner-text">
+                <span class="highlight">Cursos</span>
+                <h2>Plataforma de cursos completa</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam accusamus natus quos deleniti
+                    consequatur minus facere minima eligendi porro doloremque error quibusdam ad harum, quae ea.
+                    Debitis, mollitia. Ipsum, provident!</p>
+                <div class="carousel-indicator">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="login-container">
+            <div class="login-card">
+                <div class="logo-toolz">
+                    <img src="icons/Group_66_5_.png" alt="logo">
+                    <h2>Toolzz<span class="small-reg">&reg;</span></h2>
+                    <p class="create-an-account">Criar conta</p>
+                </div>
+                <h3>Boas-vindas!</h3>
+                <p>Entre utilizando uma das opções abaixo</p>
+                <div class="social-login">
+                    <button>Google</button>
+                    <button>Facebook</button>
+                    <button>Apple</button>
+                    <button>Twitter</button>
+                </div>
+                <p>ou</p>
+                <form id="login-form">
+                    <label>
+                        Usuário
+                        <input type="text" id="username" required>
+                    </label>
+                    <label>
+                        Senha
+                        <input type="password" id="password" required>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="remember-me">
+                        Manter conectado
+                    </label>
+                    <button type="submit">Entrar</button>
+                </form>
+                <div class="recaptcha">
+                    <p>ReCAPTCHA</p>
+                </div>
+                <a href="#">Esqueceu sua senha? Recuperar senha</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
