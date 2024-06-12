@@ -1,15 +1,16 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f0f2f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
 }
 
 .login-page {
@@ -22,8 +23,8 @@ body {
 
 .banner {
     position: relative;
-    
-    
+
+
 }
 
 .gradient {
@@ -33,7 +34,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    
+
 }
 
 img {
@@ -50,33 +51,41 @@ img {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-    
+
 }
 
 .circle {
     position: absolute;
     width: 38px;
     height: 38px;
-    border: 2px solid #ffff; /* Define a borda branca */
+    border: 2px solid #ffff;
+    /* Define a borda branca */
     border-radius: 50%;
-    z-index: 1; /* Garante que o círculo esteja acima da imagem */
+    z-index: 1;
+    /* Garante que o círculo esteja acima da imagem */
     transition: transform 0.5s ease, border-color 0.5s ease;
 }
 
 .circle:hover {
-    transform: translateY(-5px); /* Move o círculo um pouco para cima */
-    border-color: #096cf6de; /* Muda a cor da borda */
+    transform: translateY(-5px);
+    /* Move o círculo um pouco para cima */
+    border-color: #096cf6de;
+    /* Muda a cor da borda */
 }
 
 .left-circle {
-    top: 36px; /* Ajuste a posição conforme necessário */
-    left: 36px; /* Ajuste a posição conforme necessário */
+    top: 36px;
+    /* Ajuste a posição conforme necessário */
+    left: 36px;
+    /* Ajuste a posição conforme necessário */
 
 }
 
 .right-circle {
-    top: 36px; /* Ajuste a posição conforme necessário */
-    right: 150px; /* Ajuste a posição conforme necessário */
+    top: 36px;
+    /* Ajuste a posição conforme necessário */
+    right: 150px;
+    /* Ajuste a posição conforme necessário */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,12 +99,18 @@ img {
 
 .highlight {
     display: inline-block;
-    background-color: #0761E2; /* Cor azul */
-    color: white; /* Cor do texto */
-    padding: 5px 12px; /* Espaçamento interno */
-    border-radius: 15px; /* Bordas arredondadas */
-    margin-bottom: 10px; /* Espaçamento inferior */
-    font-size: 14px; /* Tamanho da fonte */
+    background-color: #0761E2;
+    /* Cor azul */
+    color: white;
+    /* Cor do texto */
+    padding: 5px 12px;
+    /* Espaçamento interno */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    margin-bottom: 10px;
+    /* Espaçamento inferior */
+    font-size: 14px;
+    /* Tamanho da fonte */
     box-shadow: 0 2px 4px #0000008e;
 }
 
@@ -104,9 +119,9 @@ img {
     top: 80px;
     display: flex;
     align-items: center;
-    
+
 }
-  
+
 .indicator {
     width: 105px;
     height: 4px;
@@ -114,7 +129,7 @@ img {
     margin-right: 16px;
     border-radius: 2px;
 }
-  
+
 .indicator.active {
     background-color: white;
 }
@@ -124,11 +139,13 @@ img {
     position: absolute;
     text-align: left;
     max-width: 80%;
-    left: 40px; /* Distância do texto à esquerda */
-    bottom: 110px; /* Distância do texto ao fundo */
+    left: 40px;
+    /* Distância do texto à esquerda */
+    bottom: 110px;
+    /* Distância do texto ao fundo */
     color: white;
     z-index: 1;
-    
+
 }
 
 .banner .banner-text h2 {
@@ -145,9 +162,10 @@ img {
 .login-container {
     flex: 1;
     position: relative;
-    padding-top: 20px;
+    padding: 24px;
     display: flex;
-    justify-content: left; /* Alterado para alinhar os itens à esquerda */
+    justify-content: left;
+    /* Alterado para alinhar os itens à esquerda */
     align-items: center;
     background-color: #fafafa;
     margin-left: -110px;
@@ -157,27 +175,33 @@ img {
 .login-container img,
 .login-container h2 {
     position: absolute;
-    top: 24px; /* Alinhe ao topo do login-container */
-    left: 24px; /* Alinhe à esquerda do login-container */
-    margin: 10px; /* Adicione margem para separar os elementos */
+    top: 24px;
+    /* Alinhe ao topo do login-container */
+    left: 24px;
+    /* Alinhe à esquerda do login-container */
+    margin: 10px;
+    /* Adicione margem para separar os elementos */
 }
 
 .login-card {
     background: white;
     padding: 40px;
     width: 100%;
-    text-align: left; /* Alinhado para a esquerda */
+    text-align: left;
+    /* Alinhado para a esquerda */
 }
 
 .logo-toolz {
     display: flex;
-    align-items: center;
-    margin-right: 10px;
+    align-items: center; 
+    
 }
 
 .logo-toolz img {
-    width: 32px; /* Define a largura da imagem */
+    width: 32px;
+    /* Define a largura da imagem */
     height: 32px;
+    margin-left: 41px;
 }
 
 .small-reg {
@@ -188,15 +212,26 @@ img {
 .create-an-account {
     color: #007bff;
     font-weight: 500;
+    display: flex;
     position: relative;
-    left: 376px;
-    bottom: 63px;
+    left: 300px;
+    bottom: 30px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.spaced {
+    margin-bottom: 16px;
 }
 
 .login-card h2 {
     font-size: 1.5em;
     padding-top: 3px;
-    padding-left: 35px;
+    padding-left: 75px;
 }
 
 .login-card h3 {
@@ -205,23 +240,34 @@ img {
     margin-top: -40px;
 }
 
-.login-container .login-card p {
+.welcome p {
     font-size: 16px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 16px;
+    margin-left: 2px;
+    color: #585858;
+
 
 }
 
 .social-login {
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 16px;
     
+    
+
 }
 
 .social-login button {
     flex: 1;
     margin: 0 5px;
+    height: 38px;
+    border: 1px solid #151515;
+    border-radius: 8px;
+
 }
+
 
 form {
     display: flex;
