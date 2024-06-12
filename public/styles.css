@@ -1,35 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background-color: #f0f2f5;
 }
+
 
 .login-page {
     display: flex;
     width: 100vw;
     height: 100vh;
-    max-width: 1400px;
     overflow: hidden;
 }
 
 .banner {
     position: relative;
-
-
+   
 }
 
 .gradient {
     height: 100%;
-    width: 88.6%;
+    width: 100%;
     background-image: linear-gradient(to top, black, transparent);
     position: absolute;
     top: 0;
@@ -37,10 +35,7 @@ body {
 
 }
 
-img {
-    flex: 1;
-    margin-right: 80px;
-    margin-left: -110px;
+img { 
     image-orientation: left;
     display: block;
     justify-content: left;
@@ -55,9 +50,10 @@ img {
 }
 
 .circle {
+    top: 36px;
     position: absolute;
-    width: 38px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
     border: 2px solid #ffff;
     /* Define a borda branca */
     border-radius: 50%;
@@ -74,17 +70,24 @@ img {
 }
 
 .left-circle {
-    top: 36px;
+    
     /* Ajuste a posição conforme necessário */
-    left: 36px;
+    left: 56px;
     /* Ajuste a posição conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.fa-solid {
+    color: #ffff;
+}
+
 .right-circle {
-    top: 36px;
+    
     /* Ajuste a posição conforme necessário */
-    right: 150px;
+    right: 56px;
     /* Ajuste a posição conforme necessário */
     display: flex;
     justify-content: center;
@@ -104,14 +107,17 @@ img {
     color: white;
     /* Cor do texto */
     padding: 5px 12px;
+    font-weight: 400;
     /* Espaçamento interno */
     border-radius: 15px;
     /* Bordas arredondadas */
     margin-bottom: 10px;
     /* Espaçamento inferior */
-    font-size: 14px;
+    font-size: 16px;
     /* Tamanho da fonte */
     box-shadow: 0 2px 4px #0000008e;
+    text-align: center;
+    cursor: pointer;
 }
 
 .carousel-indicator {
@@ -134,14 +140,27 @@ img {
     background-color: white;
 }
 
+.chevron {
+    top: 241px;
+    right: 64px;
+    position: absolute;
+   
+}
+
+.fa-chevron-right {
+    margin-left: 16px;
+}
+
+
+
 
 .banner .banner-text {
     position: absolute;
     text-align: left;
-    max-width: 80%;
-    left: 40px;
+    max-width: 100%;
+    padding: 0px 56px;
     /* Distância do texto à esquerda */
-    bottom: 110px;
+    bottom: 140px;
     /* Distância do texto ao fundo */
     color: white;
     z-index: 1;
@@ -149,26 +168,27 @@ img {
 }
 
 .banner .banner-text h2 {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 400;
     padding: 15px 0px;
 }
 
 .banner .banner-text p {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
     margin: 0;
     color: #909090;
 }
 
 .login-container {
-    flex: 1;
     position: relative;
     padding: 24px;
     display: flex;
-    justify-content: left;
     /* Alterado para alinhar os itens à esquerda */
     align-items: center;
     background-color: #fafafa;
-    margin-left: -110px;
+    width: 692px;
+    
 }
 
 
@@ -187,6 +207,7 @@ img {
     background: white;
     padding: 40px;
     width: 100%;
+    max-width: 500px;
     text-align: left;
     /* Alinhado para a esquerda */
 }
@@ -194,6 +215,8 @@ img {
 .logo-toolz {
     display: flex;
     align-items: center; 
+    padding: 24px 0px;
+    
     
 }
 
@@ -202,7 +225,20 @@ img {
     /* Define a largura da imagem */
     height: 32px;
     margin-left: 41px;
+    top: 24px;
+    right: 24px;
+    
 }
+
+.logo-toolz h2 {
+    top: 24px;
+    right: 24px;
+    font-size: 1.5em;
+    padding-top: 3px;
+    padding-left: 75px;
+
+}
+
 
 .small-reg {
     font-size: 0.5em;
@@ -211,33 +247,30 @@ img {
 
 .create-an-account {
     color: #007bff;
+    font-size: 18px;
     font-weight: 500;
     display: flex;
-    position: relative;
-    left: 300px;
-    bottom: 30px;
+    position: absolute;
+    right: 48px;
+    top: 38px;
+    text-shadow: 0 2px 4px #00000061;
+    cursor: pointer;
 }
+
 
 .welcome {
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
-}
-
-.spaced {
-    margin-bottom: 16px;
-}
-
-.login-card h2 {
-    font-size: 1.5em;
-    padding-top: 3px;
-    padding-left: 75px;
+    gap: 16px;
+    padding: 24px 0px 0px 0px;
+    text-shadow: 0 2px 4px #00000061;
+    
 }
 
 .login-card h3 {
     font-size: 32px;
-    margin-bottom: 10px;
-    margin-top: -40px;
+    font-weight: 600;
+    
 }
 
 .welcome p {
@@ -252,21 +285,65 @@ img {
 .social-login {
     display: flex;
     justify-content: space-between;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    
-    
-
+    padding: 24px 0px 16px 0px;
 }
 
 .social-login button {
-    flex: 1;
     margin: 0 5px;
-    height: 38px;
     border: 1px solid #151515;
     border-radius: 8px;
+    height: 43px;
+    width: 137px;
+    background-color: white;
 
 }
+
+.social-login img {
+    position: initial;
+    margin: auto;
+    
+    
+}
+
+.social-login .tz img {
+    width: 34px;
+    height: 34px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.social-login .facebook img {
+    width: 34px;
+    height: 41px;
+}
+
+.social-login .apple img {
+    width: 30px;
+    height: 41px;
+}
+
+.social-login .twitter img {
+    width: 34px;
+    height: 41px;
+}
+
+.or-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+
+.or-text .line {
+    flex: 1;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1); /* Cor preta com 10% de opacidade */
+    margin: 0 10px; /* Espaço ao redor do texto */
+    max-width: 217px; /* Largura máxima da linha */
+}
+
 
 
 form {
@@ -276,30 +353,166 @@ form {
     margin-bottom: 20px;
 }
 
+.input-user {
+    position: relative;
+    width: 100%;
+}
+
+.input-user i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #585858;
+    
+}
+
+.input-user input {
+    width: 95%;
+    padding: 10px 10px 10px 30px; /* Padding left ajustado para espaço do ícone */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.input-password {
+    position: relative;
+    width: 100%;
+}
+
+.input-password i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #585858;
+}
+
+.input-password input {
+    width: 95%;
+    padding: 10px 10px 10px 30px; /* Padding left ajustado para espaço do ícone */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
 form label {
+    font-size: 16px;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     text-align: left;
+    
+}
+
+form label p {
+    padding: 6px 0px;
 }
 
 form input[type="text"],
 form input[type="password"] {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #6A6A6A;
     border-radius: 5px;
 }
 
-form button {
+.checkbox-label {
+    display: inline-block;
+    padding: 10px 0px 0px 0px;
+}
+
+.checkbox-label span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border: 1px solid #6A6A6A;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hcaptcha-box {
+    width: 345px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
     padding: 10px;
+    
+}
+
+.hcaptcha-left {
+    display: flex;
+    align-items: center;
+}
+
+.hcaptcha-checkbox {
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.hcaptcha-label {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hcaptcha-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hcaptcha-right img {
+    position: initial;
+    width: 32px;
+    height: 38px;
+}
+
+.hcaptcha-terms {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0px 0px 10px 0px;
+    
+}
+
+
+form button {
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    margin-top: 5px;
     border: none;
     background-color: #007bff;
     color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 2px 4px #0000008e;
+}
+
+form button i {
+    margin-right: 5px; /* Adiciona um espaço entre o ícone e o texto */
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: hsl(211, 100%, 60%);
 }
 
 .recaptcha {
@@ -307,7 +520,23 @@ form button:hover {
 }
 
 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #007bff;
+    text-decoration: none;
+    
+}
+
+.forget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #585858;
+}
+
+.forget span {
+    padding: 0px 3px 0px 0px;
 }
 
 a:hover {
