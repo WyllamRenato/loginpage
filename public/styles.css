@@ -1,5 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Reset básico */
+
+/* Box-sizing border-box para todos os elementos */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos padrão para o body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* Remover decoração de lista */
+ul, ol {
+    list-style: none;
+}
+
+/* Remover margens padrão de parágrafos */
+p {
+    margin: 0;
+}
+
+/* Remover sublinhado padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo padrão para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remover estilo de botão padrão */
+button, input[type="button"], input[type="submit"] {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Remover contorno padrão ao focar */
+:focus {
+    outline: none;
+}
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -59,18 +111,17 @@ img {
     border-radius: 50%;
     z-index: 1;
     /* Garante que o círculo esteja acima da imagem */
-    transition: transform 0.5s ease, border-color 0.5s ease;
+    transition: transform 0.7s ease, border-color 0.7s ease;
 }
 
 .circle:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
     /* Move o círculo um pouco para cima */
-    border-color: #096cf6de;
+    border-color: #1dc1ef;
     /* Muda a cor da borda */
 }
 
 .left-circle {
-    
     /* Ajuste a posição conforme necessário */
     left: 56px;
     /* Ajuste a posição conforme necessário */
@@ -118,7 +169,10 @@ img {
     box-shadow: 0 2px 4px #0000008e;
     text-align: center;
     cursor: pointer;
+    
 }
+
+
 
 .carousel-indicator {
     position: relative;
@@ -150,8 +204,6 @@ img {
 .fa-chevron-right {
     margin-left: 16px;
 }
-
-
 
 
 .banner .banner-text {
@@ -255,6 +307,11 @@ img {
     top: 38px;
     text-shadow: 0 2px 4px #00000061;
     cursor: pointer;
+    transition: color 0.7s ease;
+}
+
+.create-an-account:hover {
+    color: #1dc1ef;
 }
 
 
@@ -284,6 +341,7 @@ img {
 
 .social-login {
     display: flex;
+    width: 516.6px;
     justify-content: space-between;
     padding: 24px 0px 16px 0px;
 }
@@ -295,7 +353,13 @@ img {
     height: 43px;
     width: 137px;
     background-color: white;
+    transition: transform 0.7s ease, border-color 0.7s ease;
+    cursor: pointer;
+}
 
+.social-login button:hover {
+    transform: translateY(-1px);
+    border-color: #1dc1ef;
 }
 
 .social-login img {
@@ -331,8 +395,8 @@ img {
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     padding: 10px 0px;
 }
 
@@ -353,48 +417,30 @@ form {
     margin-bottom: 20px;
 }
 
-.input-user {
-    position: relative;
-    width: 100%;
-}
-
-.input-user i {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: #585858;
-    
-}
-
-.input-user input {
-    width: 95%;
-    padding: 10px 10px 10px 30px; /* Padding left ajustado para espaço do ícone */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: transparent;
-}
-
+.input-user,
 .input-password {
     position: relative;
     width: 100%;
 }
 
+.input-user i,
 .input-password i {
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
     color: #585858;
+
 }
 
-.input-password input {
+.input-user input, .input-password input {
     width: 95%;
     padding: 10px 10px 10px 30px; /* Padding left ajustado para espaço do ícone */
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: transparent;
+   
 }
+
 
 form label {
     font-size: 16px;
@@ -411,10 +457,21 @@ form label p {
 
 form input[type="text"],
 form input[type="password"] {
-    padding: 10px;
     border: 1px solid #6A6A6A;
     border-radius: 5px;
+    transition: transform 0.7s ease, border-color 0.7s ease, box-shadow 0.7s ease;
+    outline: none;
+    cursor: pointer;
 }
+
+form input[type="text"]:hover ,
+form input[type="password"]:hover {
+    border-color: #1dc1ef;
+    box-shadow: 0 0 5px rgba(29, 193, 239, 0.5);
+    
+}
+
+
 
 .checkbox-label {
     display: inline-block;
@@ -434,6 +491,7 @@ form input[type="checkbox"] {
     margin-right: 5px;
     vertical-align: middle;
     border: 1px solid #6A6A6A;
+    cursor: pointer;
 }
 
 .form-container {
@@ -497,8 +555,9 @@ form input[type="checkbox"] {
 
 form button {
     font-family: 'Inter', sans-serif;
+    width: 516.6px;
     padding: 10px;
-    margin-top: 5px;
+    margin: 5px 0px 10px 0px;
     border: none;
     background-color: #007bff;
     color: white;
@@ -529,6 +588,7 @@ a {
 }
 
 .forget {
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -537,6 +597,7 @@ a {
 
 .forget span {
     padding: 0px 3px 0px 0px;
+    
 }
 
 a:hover {
