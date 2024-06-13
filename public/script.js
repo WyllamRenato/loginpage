@@ -26,3 +26,19 @@ document.getElementById('login-form').addEventListener('submit', function(event)
       console.error('Error:', error);
     });
   });
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+  const leftCircle = document.querySelector('.left-circle');
+  const socialLoginButtons = document.querySelectorAll('.social-login button');
+
+  leftCircle.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+
+      // Alterna as classes dos botões do social-login para o modo escuro
+      socialLoginButtons.forEach(button => {
+          button.classList.toggle('dark-mode');
+      });
+  });
+});
