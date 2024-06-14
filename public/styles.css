@@ -45,24 +45,24 @@ body.dark-mode {
 }
 
 .dark-mode .social-login button {
-    border-color: #fff; /* Remove a borda dos botões no modo escuro */
+    border-color: #fff; 
 }
 
 .dark-mode .social-login .tz img {
-    content: url('icons/icon-tz-white.png'); /* Troca para o ícone branco */
+    content: url('icons/icon-tz-white.png'); 
     border: transparent;
 }
 
 .dark-mode .social-login .facebook img {
-    content: url('icons/icon-facebook-white.png'); /* Troca para o ícone branco */
+    content: url('icons/icon-facebook-white.png'); 
 }
 
 .dark-mode .social-login .apple img {
-    content: url('icons/icon-apple-white.png'); /* Troca para o ícone branco */
+    content: url('icons/icon-apple-white.png'); 
 }
 
 .dark-mode .social-login .twitter img {
-    content: url('icons/icon-twitter-white.png'); /* Troca para o ícone branco */
+    content: url('icons/icon-twitter-white.png');
 }
 
 .dark-mode .input-user i,
@@ -81,9 +81,6 @@ body.dark-mode .input-password input {
     background-color: white;
     color: #555555;
 }
-
-
-
 
 /*Fim das Variáveis para cores*/
 
@@ -194,13 +191,9 @@ img {
     color: white;
     padding: 5px 12px;
     font-weight: 400;
-    /* Espaçamento interno */
     border-radius: 15px;
-    /* Bordas arredondadas */
     margin-bottom: 10px;
-    /* Espaçamento inferior */
     font-size: 16px;
-    /* Tamanho da fonte */
     box-shadow: 0 2px 4px #0000008e;
     text-align: center;
     cursor: pointer;
@@ -246,9 +239,7 @@ img {
     text-align: left;
     max-width: 100%;
     padding: 0px 56px;
-    /* Distância do texto à esquerda */
     bottom: 140px;
-    /* Distância do texto ao fundo */
     color: white;
     z-index: 1;
 
@@ -271,7 +262,6 @@ img {
     position: relative;
     padding: 24px;
     display: flex;
-    /* Alterado para alinhar os itens à esquerda */
     align-items: center;
     background-color: var(--cor-fundo);
     width: 692px;
@@ -359,7 +349,6 @@ img {
 .login-card h3 {
     font-size: 32px;
     font-weight: 600;
-    
 }
 
 .welcome p {
@@ -367,8 +356,6 @@ img {
     margin-bottom: 16px;
     margin-left: 2px;
     color: var(--cor-texto);
-
-
 }
 
 .social-login {
@@ -628,7 +615,7 @@ form button {
 }
 
 form button i {
-    margin-right: 5px; /* Adiciona um espaço entre o ícone e o texto */
+    margin-right: 5px;
 }
 
 form button:hover {
@@ -667,4 +654,34 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/*Feedback Visual ao logar*/
+
+.feedback {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+
+.feedback.show {
+    display: block;
+}
+
+.feedback.success {
+    color: #4CAF50;
+}
+
+.feedback.error {
+    color: #f44336;
 }

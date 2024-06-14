@@ -15,7 +15,7 @@
         padding: 32px;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        align-items: center;
     }
 
     .login-card {
@@ -37,24 +37,23 @@
     
     .left-circle {
         position: absolute;
-        top: 10px; /* Ajusta a posição vertical */
-        left: 10px; /* Ajusta a posição horizontal */
+        top: 10px; 
+        left: 10px; 
     }
     
     .right-circle {
-        display: none; /* Esconde o right-circle */
+        display: none; 
     }
     
     .create-an-account {
         position: relative;
-        top: 10px; /* Ajusta a posição vertical */
-        left: 50px; /* Ajusta a posição horizontal */
+        top: 10px; 
+        left: 50px;
         text-shadow: none;
         width: 100%;
-        border-bottom: 1px solid #ccc; /* Adiciona a borda separadora */
+        border-bottom: 1px solid #ccc; 
         cursor: pointer;
     }
-
     
     .social-login {
         flex-direction: row;
@@ -80,7 +79,6 @@
 
     }
 
-
     .form button {
         width: 70%;
     }
@@ -90,8 +88,6 @@
 
 /* Telas pequenas (celulares) */
 @media (max-width: 600px) {
-
-   
 
     .login-page {
         flex-direction: column;
@@ -110,7 +106,7 @@
         padding: 16px;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        align-items: center; 
     }
 
     .login-card {
@@ -124,10 +120,10 @@
         content: '';
         position: absolute;
         top: 0;
-        left: -16px; /* Ajuste conforme necessário para aumentar a largura do border-top */
-        width: calc(100% + 90px); /* Ajuste conforme necessário para aumentar a largura do border-top */
-        height: 1px; /* Espessura do border-top */
-        background-color: #000; /* Cor do border-top */
+        left: -16px; 
+        width: calc(100% + 90px); 
+        height: 1px; 
+        background-color: #000; 
     }
     
     .logo-toolz {
@@ -149,8 +145,8 @@
     
     .left-circle {
         position: absolute;
-        top: 24px; /* Ajusta a posição vertical */
-        left: 24px; /* Ajusta a posição horizontal */
+        top: 24px; 
+        left: 24px; 
         border: 2px solid #000;
     }
 
@@ -163,7 +159,7 @@
     }
     
     .right-circle {
-        display: none; /* Esconde o right-circle */
+        display: none;
     }
 
     .dark-mode .create-an-account {
@@ -186,8 +182,6 @@
         
     }
 
-
-    
     .social-login {
         flex-direction: row;
         justify-content: space-between;
@@ -203,12 +197,9 @@
         max-width: 87%;
     }
 
-    
     .hcaptcha-box {
         width: 100%;
     }
-
-    
 
     .login-form {
         width: 100%;
