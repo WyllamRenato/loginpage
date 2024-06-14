@@ -1,80 +1,9 @@
-/* Telas pequenas (celulares) */
-@media (max-width: 600px) {
-
-    .login-container {
-        width: 100%;
-        
-    }
-
-    .login-page {
-        flex-direction: column;
-        align-items: center;
-        overflow: scroll;
-        
-    }
-
-    .banner {
-        display: none;
-    }
-
-    .login-container {
-        width: 100%;
-        padding: 16px;
-    }
-
-    .login-card {
-        padding: 24px;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .logo-toolz {
-        padding: 16px 0;
-    }
-
-    
-
-    .create-an-account {
-        position: static;
-        margin-top: 16px;
-    }
-
-    .social-login {
-        flex-direction: row;
-        gap: 16px;
-        width: 100%;
-    }
-
-    .social-login button {
-        width: 100%;
-        margin: 8px 0;
-    }
-
-    .or-text {
-        width: 100%;
-    }
-
-    .input-user input,
-    .input-password input {
-        width: 300px;
-    }
-
-    .hcaptcha-box {
-        width: 100%;
-    }
-
-    form button {
-        width: 100%;
-    }
-
-   
-}
-
 /* Telas médias (tablets) */
 @media (min-width: 601px) and (max-width: 900px) {
     .login-page {
         flex-direction: column;
         align-items: center;
+        overflow: scroll;
     }
 
     .banner {
@@ -84,59 +13,225 @@
     .login-container {
         width: 100%;
         padding: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
     }
 
     .login-card {
         padding: 32px;
         width: 100%;
         max-width: 500px;
+        position: relative;
     }
-
+    
     .logo-toolz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 50px;
         padding: 32px 0;
+        width: 100%;
+       
     }
-
-    .logo-toolz h2 {
-        font-size: 1.5em;
-        padding-left: 0;
+    
+    .left-circle {
+        position: absolute;
+        top: 10px; /* Ajusta a posição vertical */
+        left: 10px; /* Ajusta a posição horizontal */
     }
-
+    
+    .right-circle {
+        display: none; /* Esconde o right-circle */
+    }
+    
     .create-an-account {
-        position: static;
-        margin-top: 16px;
+        position: relative;
+        top: 10px; /* Ajusta a posição vertical */
+        left: 50px; /* Ajusta a posição horizontal */
+        text-shadow: none;
+        width: 100%;
+        border-bottom: 1px solid #ccc; /* Adiciona a borda separadora */
+        cursor: pointer;
     }
 
+    
     .social-login {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
     }
-
-    .social-login button {
-        width: 48%;
-        margin: 8px 0;
+    
+    .or-text {
+        width: 100%;
+    }
+    
+    .input-user input,
+    .input-password input {
+        max-width: 100%;
+    }
+    
+    .hcaptcha-box {
+        width: 100%;
     }
 
+    .form-container {
+        display: none;
+
+    }
+
+
+    .form button {
+        width: 70%;
+    }
+}
+
+
+
+/* Telas pequenas (celulares) */
+@media (max-width: 600px) {
+
+   
+
+    .login-page {
+        flex-direction: column;
+        
+        align-items: center;
+        overflow: auto;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .login-container {
+        position: relative;
+        width: 90%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .login-card {
+        padding: 0px 16px 0px 16px;
+        width: 90%;
+        position: absolute;
+        transform: translateY(15%);
+    }
+
+    .login-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -16px; /* Ajuste conforme necessário para aumentar a largura do border-top */
+        width: calc(100% + 90px); /* Ajuste conforme necessário para aumentar a largura do border-top */
+        height: 1px; /* Espessura do border-top */
+        background-color: #000; /* Cor do border-top */
+    }
+    
+    .logo-toolz {
+        display: flex;
+        position: relative;
+        top: -10px;
+        right: 61px;
+        width: 100%;       
+    }
+
+    .welcome {
+        padding-left: 5px;
+       
+    }
+    
+    .dark-mode .left-circle {
+        border: 2px solid #fff;
+    }
+    
+    .left-circle {
+        position: absolute;
+        top: 24px; /* Ajusta a posição vertical */
+        left: 24px; /* Ajusta a posição horizontal */
+        border: 2px solid #000;
+    }
+
+    .dark-mode .fa-solid {
+        color: #fff;
+    }
+
+    .fa-solid {
+        color: #000;
+    }
+    
+    .right-circle {
+        display: none; /* Esconde o right-circle */
+    }
+
+    .dark-mode .create-an-account {
+        color: #fff;
+    }
+    
+    .create-an-account {
+        display: flex;
+        position: absolute;
+        left: 66%;
+        transform: translateY(-495%);
+        text-shadow: none;
+        color: #000;
+    }
+
+    .login-card h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 1px;
+        
+    }
+
+
+    
+    .social-login {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
     .or-text {
         width: 100%;
     }
 
     .input-user input,
     .input-password input {
-        max-width: 100%;
+        max-width: 87%;
     }
 
+    
     .hcaptcha-box {
         width: 100%;
     }
 
-    .no-account {
-        text-align: center;
-        padding-top: 16px;
+    
+
+    .login-form {
+        width: 100%;
     }
 
-    .no-account a {
-        display: inline-block;
-        margin-top: 8px;
+    .form-container {
+        display: none;
+
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form label p {
+        padding: 0px 0px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    form button .fa-solid {
+        display: none;
     }
 }
