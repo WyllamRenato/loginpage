@@ -1,0 +1,142 @@
+/* Telas pequenas (celulares) */
+@media (max-width: 600px) {
+
+    .login-container {
+        width: 100%;
+        
+    }
+
+    .login-page {
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+        
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .login-container {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .login-card {
+        padding: 24px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .logo-toolz {
+        padding: 16px 0;
+    }
+
+    
+
+    .create-an-account {
+        position: static;
+        margin-top: 16px;
+    }
+
+    .social-login {
+        flex-direction: row;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .social-login button {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .or-text {
+        width: 100%;
+    }
+
+    .input-user input,
+    .input-password input {
+        width: 300px;
+    }
+
+    .hcaptcha-box {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+   
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .login-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .login-container {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .login-card {
+        padding: 32px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .logo-toolz {
+        padding: 32px 0;
+    }
+
+    .logo-toolz h2 {
+        font-size: 1.5em;
+        padding-left: 0;
+    }
+
+    .create-an-account {
+        position: static;
+        margin-top: 16px;
+    }
+
+    .social-login {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .social-login button {
+        width: 48%;
+        margin: 8px 0;
+    }
+
+    .or-text {
+        width: 100%;
+    }
+
+    .input-user input,
+    .input-password input {
+        max-width: 100%;
+    }
+
+    .hcaptcha-box {
+        width: 100%;
+    }
+
+    .no-account {
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    .no-account a {
+        display: inline-block;
+        margin-top: 8px;
+    }
+}
